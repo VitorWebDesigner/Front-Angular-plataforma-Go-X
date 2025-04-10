@@ -1,0 +1,24 @@
+<div class="container-infos-player">
+    <div class="links-caminho-aulas">
+      <a href="#">Go X academy > </a>
+      <a href="#">{{ aulaAtual.titulo }}</a>
+    </div>
+  
+    <div class="icone-estrela-avalicao-aula">
+      <img src="assets/midias/icone-estrela.svg" alt="Estrela para avaliação da aula" *ngFor="let i of [1,2,3,4,5]">
+    </div>
+  
+    <div class="aula-concluida" [class.concluida]="aulaAtual.concluida" (click)="marcarComoConcluida()">
+      <p>{{ aulaAtual.concluida ? 'Aula concluída' : 'Concluir aula' }}</p>
+      <img src="assets/midias/icone-concluir-aula.svg" alt="Ícone de aula concluída">
+    </div>
+  
+    <div class="botoes-prev-next-aula">
+      <img src="assets/midias/icone-aula-prev.svg" alt="icone-aula-prev" (click)="aulaAnterior()">
+      <img src="assets/midias/icone-aula-next.svg" alt="icone-aula-next" (click)="proximaAula()">
+    </div>
+  </div>
+  
+  <div class="titulo-da-aula">
+    <h1>{{ aulaAtual.titulo }}</h1>
+  </div>

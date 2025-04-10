@@ -1,0 +1,27 @@
+<div class="tabs">
+  <div class="tab" 
+       [class.active]="tabAtiva === 'material'"
+       (click)="selecionarTab('material')">
+    Material de apoio
+  </div>
+  <div class="tab" 
+       [class.active]="tabAtiva === 'descricao'"
+       (click)="selecionarTab('descricao')">
+    Descrição
+  </div>
+  <div class="tab" 
+       [class.active]="tabAtiva === 'comentarios'"
+       (click)="selecionarTab('comentarios')">
+    Comentários
+  </div>
+</div>
+
+<div class="tab-content" [class.active]="tabAtiva === 'material'">
+  <p>{{ aulaAtual.materialApoio }}</p>
+</div>
+<div class="tab-content" [class.active]="tabAtiva === 'descricao'">
+  <p>{{ aulaAtual.descricao }}</p>
+</div>
+<div class="tab-content" [class.active]="tabAtiva === 'comentarios'">
+  <p>Seção de comentários aqui.</p>
+</div>

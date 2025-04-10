@@ -1,0 +1,18 @@
+<div class="modulo" *ngFor="let modulo of modulos">
+  <div class="cabecalho-modulo">
+    <h2>{{ modulo.nome }}</h2>
+    <div class="progresso-container">
+      <span class="percentual">{{ modulo.progresso }}%</span>
+      <div class="barra">
+        <div class="preenchimento" [style.width.%]="modulo.progresso"></div>
+      </div>
+      <i class="fa-solid fa-caret-down" 
+         [class.girada]="modulo.aberto"
+         (click)="toggleModulo(modulo)"></i>
+    </div>
+
+    <div class="aulas" [style.maxHeight]="modulo.aberto ? 'unset' : '0'">
+      <p *ngFor="let aula of modulo.aulas">{{ aula }}</p>
+    </div>
+  </div>
+</div>

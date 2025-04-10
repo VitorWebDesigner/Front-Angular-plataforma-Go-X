@@ -1,0 +1,33 @@
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #444;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #888;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  
+  &.active {
+    color: white;
+    border-color: white;
+  }
+}
+
+.tab-content {
+  display: none;
+  
+  p {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  &.active {
+    display: block;
+  }
+}

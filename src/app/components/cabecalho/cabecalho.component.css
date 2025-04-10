@@ -1,0 +1,119 @@
+.cabecalho {
+  background-color: #1B1B1B;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+
+nav {
+  background-color: #1B1B1B;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 1820px;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.logo-links {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  
+  .logo img {
+    width: 90px;
+  }
+  
+  .links a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: white !important;
+    
+    &:hover {
+      color: #5865F2 !important;
+    }
+  }
+}
+
+.pesquisa-clicaveis {
+  display: flex;
+  gap: 25px;
+  
+  .pesquisa input {
+    width: 290px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    font-weight: 600;
+    background-color: #323232;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  
+  .idioma {
+    display: flex;
+    align-items: center;
+    background-color: #3a3a3a;
+    border-radius: 50px;
+    padding: 1px 10px 1px 0px;
+    width: fit-content;
+    cursor: pointer;
+    
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .fa-solid {
+      color: white;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
+  
+  .perfil {
+    display: flex;
+    align-items: center;
+    background-color: #3a3a3a;
+    border-radius: 50px;
+    padding: 1px 10px 1px 0px;
+    width: fit-content;
+    cursor: pointer;
+    
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .fa-solid {
+      color: white;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
+  
+  .notificacoes {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+  }
+}
+
+@media (min-width: 343px) and (max-width: 767px) {
+  .cabecalho {
+    display: none !important;
+  }
+}
