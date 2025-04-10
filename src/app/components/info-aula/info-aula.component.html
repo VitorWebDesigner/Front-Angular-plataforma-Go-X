@@ -5,7 +5,7 @@
     </div>
   
     <div class="icone-estrela-avalicao-aula">
-      <img src="assets/midias/icone-estrela.svg" alt="Estrela para avaliação da aula" *ngFor="let i of [1,2,3,4,5]">
+      <i class="fa-regular fa-star" *ngFor="let i of [1,2,3,4,5]"></i>
     </div>
   
     <div class="aula-concluida" [class.concluida]="aulaAtual.concluida" (click)="marcarComoConcluida()">

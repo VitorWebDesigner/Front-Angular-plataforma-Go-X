@@ -1,9 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-conteudos-extras',
   templateUrl: './conteudos-extras.component.html',
-  styleUrls: ['./conteudos-extras.component.scss']
+  styleUrls: ['./conteudos-extras.component.scss'],
+  imports: [CommonModule],
 })
 export class ConteudosExtrasComponent {
   @Input() tipoConteudo: 'links' | 'modulos' = 'links';

@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "gox-academy:build:production"
+              "buildTarget": "gox-academy:build:production"
             },
             "development": {
-              "browserTarget": "gox-academy:build:development"
+              "buildTarget": "gox-academy:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gox-academy:build"
+            "buildTarget": "gox-academy:build"
           }
         },
         "test": {

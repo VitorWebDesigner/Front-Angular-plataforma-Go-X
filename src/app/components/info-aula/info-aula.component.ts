@@ -1,10 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { PlayerService, VideoAula } from '../../services/player.service';
 
 @Component({
   selector: 'app-info-aula',
   templateUrl: './info-aula.component.html',
-  styleUrls: ['./info-aula.component.scss']
+  styleUrls: ['./info-aula.component.scss'],
+  imports: [CommonModule],
 })
 export class InfoAulaComponent implements OnInit {
   aulaAtual!: VideoAula;

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Modulo } from '../../models/modulo.model';
 import { ModulosService } from '../../services/modulos.service';
@@ -5,7 +6,8 @@ import { ModulosService } from '../../services/modulos.service';
 @Component({
   selector: 'app-modulos',
   templateUrl: './modulos.component.html',
-  styleUrls: ['./modulos.component.scss']
+  styleUrls: ['./modulos.component.scss'],
+  imports: [CommonModule],
 })
 export class ModulosComponent implements OnInit {
   modulos: Modulo[] = [];
